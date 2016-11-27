@@ -13,5 +13,5 @@ module.exports = function isOdd(i) {
   if (!isNumber(i)) {
     throw new TypeError('is-odd expects a number.');
   }
-  return !!(~~i >> 0 & 1);
+  return !!(~~i & 1);
 };
