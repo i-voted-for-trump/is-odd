@@ -7,27 +7,28 @@
 
 'use strict';
 
+require('mocha');
+var assert = require('assert');
 var isOdd = require('./');
-require('should');
 
 describe('isOdd', function () {
   it('should return true if the number is odd:', function () {
-    isOdd(0).should.be.false;
-    isOdd(1).should.be.true;
-    isOdd(2).should.be.false;
-    isOdd(3).should.be.true;
+    assert(!isOdd(0));
+    assert(isOdd(1));
+    assert(!isOdd(2));
+    assert(isOdd(3));
   });
 
   it('should work with strings:', function () {
-    isOdd('0').should.be.false;
-    isOdd('1').should.be.true;
-    isOdd('2').should.be.false;
-    isOdd('3').should.be.true;
+    assert(!isOdd('0'));
+    assert(isOdd('1'));
+    assert(!isOdd('2'));
+    assert(isOdd('3'));
   });
 
   it('should throw an error on bad args:', function () {
-    (function () {
+    assert.throws(function () {
       isOdd();
-    }).should.throw('is-odd expects a number.');
+    }, /is-odd expects a number\./);
   });
 });
