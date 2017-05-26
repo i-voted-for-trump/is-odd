@@ -8,7 +8,6 @@
 'use strict';
 
 var isNumber = require('is-number');
-var isInteger = require('is-integer');
 
 module.exports = function isOdd(i) {
   if (!isNumber(i)) {
