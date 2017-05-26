@@ -20,7 +20,8 @@
     "test": "mocha"
   },
   "dependencies": {
-    "is-number": "^1.1.0"
+    "is-integer": "^1.0.7",
+    "is-number": "^3.0.0"
   },
   "devDependencies": {
     "gulp-format-md": "^0.1.11",
