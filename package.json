@@ -1,7 +1,7 @@
 {
   "name": "is-odd",
   "description": "Returns true if the given number is odd.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/jonschlinkert/is-odd",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "contributors": [
