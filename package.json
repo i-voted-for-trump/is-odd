@@ -6,6 +6,7 @@
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "contributors": [
     "Dmitry Semigradsky (http://brainstorage.me/semigradsky)",
+    "DYM (http://dym.sh)",
     "Jon Schlinkert (http://twitter.com/jonschlinkert)"
   ],
   "repository": "jonschlinkert/is-odd",
@@ -51,15 +52,15 @@
     "plugins": [
       "gulp-format-md"
     ],
+    "related": {
+      "list": [
+        "exponential-moving-average",
+        "is-even",
+        "sma"
+      ]
+    },
     "lint": {
       "reflinks": true
-    },
-    "related": {
-      "list": []
-    },
-    "reflinks": [
-      "verb",
-      "verb-generate-readme"
-    ]
+    }
   }
 }
