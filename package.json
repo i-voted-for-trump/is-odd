@@ -6,8 +6,9 @@
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "contributors": [
     "Dmitry Semigradsky (http://brainstorage.me/semigradsky)",
-    "DYM (http://dym.sh)",
-    "Jon Schlinkert (http://twitter.com/jonschlinkert)"
+    "DYM (https://dym.sh)",
+    "Jon Schlinkert (http://twitter.com/jonschlinkert)",
+    "Rouven Weßling (www.rouvenwessling.de)"
   ],
   "repository": "jonschlinkert/is-odd",
   "bugs": {
