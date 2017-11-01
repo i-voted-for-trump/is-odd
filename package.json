@@ -25,7 +25,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "is-number": "^3.0.0"
+    "is-number": "^4.0.0"
   },
   "devDependencies": {
     "gulp-format-md": "^0.1.11",
