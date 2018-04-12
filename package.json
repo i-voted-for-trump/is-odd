@@ -26,7 +26,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "is-number": "^4.0.0"
+    "is-even": "^1.0.0"
   },
   "devDependencies": {
     "gulp-format-md": "^1.0.0",
