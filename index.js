@@ -16,5 +16,5 @@ module.exports = function isOdd(i) {
   if (Number(i) !== Math.floor(i)) {
     throw new RangeError('is-odd expects an integer.');
   }
-  return !!(~~i & 1);
+  return i % 2 == 1;
 };
