@@ -19,6 +19,7 @@ describe('isOdd', function() {
     assert(!isOdd(2));
     assert(isOdd(3));
     assert(isOdd(1.0e0));
+    assert(isOdd(9007199254740991));
   });
 
   it('should work with strings:', function() {
@@ -27,6 +28,7 @@ describe('isOdd', function() {
     assert(!isOdd('2'));
     assert(isOdd('3'));
     assert(isOdd('1.0e0'));
+    assert(isOdd('9007199254740991'));
   });
 
   it('should throw an error on bad args:', function() {
