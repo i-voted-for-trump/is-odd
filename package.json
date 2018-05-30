@@ -1,7 +1,7 @@
 {
   "name": "is-odd",
-  "description": "Returns true if the given number is odd.",
-  "version": "2.0.0",
+  "description": "Returns true if the given number is odd, and is an integer that does not exceed the JavaScript MAXIMUM_SAFE_INTEGER.",
+  "version": "3.0.0",
   "homepage": "https://github.com/jonschlinkert/is-odd",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "contributors": [
@@ -20,17 +20,17 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "mocha"
   },
   "dependencies": {
-    "is-number": "^4.0.0"
+    "is-number": "^6.0.0"
   },
   "devDependencies": {
     "gulp-format-md": "^1.0.0",
-    "mocha": "^4.0.1"
+    "mocha": "^3.5.3"
   },
   "keywords": [
     "array",
