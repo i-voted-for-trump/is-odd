@@ -7,14 +7,25 @@
 
 'use strict';
 
-var isNumber = require('is-number');
+const isNumber = require('is-number');
 
-module.exports = function isOdd(i) {
-  if (!isNumber(i)) {
-    throw new TypeError('is-odd expects a number.');
+module.exports = function isOdd(value) {
+  const n = Math.abs(value);
+  if (!isNumber(n)) {
+    throw new TypeError('expected a number');
   }
-  if (Number(i) !== Math.floor(i)) {
-    throw new RangeError('is-odd expects an integer.');
+  if (!Number.isInteger(n)) {
+    throw new Error('expected an integer');
   }
-  return !!(~~i & 1);
+  if (!isSafeInteger(n)) {
+    throw new Error('value exceeds maximum safe integer');
+  }
+  return (n % 2) === 1;
 };
+
+function isSafeInteger(n) {
+  if (typeof Number.isSafeInteger === 'function') {
+    return Number.isInteger(n) && (n <= Number.MAX_SAFE_INTEGER);
+  }
+  return Number.isSafeInteger(n);
+}
