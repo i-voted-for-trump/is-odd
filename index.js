@@ -17,15 +17,9 @@ module.exports = function isOdd(value) {
   if (!Number.isInteger(n)) {
     throw new Error('expected an integer');
   }
-  if (!isSafeInteger(n)) {
+  if (!Number.isSafeInteger(n)) {
     throw new Error('value exceeds maximum safe integer');
   }
   return (n % 2) === 1;
 };
 
-function isSafeInteger(n) {
-  if (typeof Number.isSafeInteger === 'function') {
-    return Number.isInteger(n) && (n <= Number.MAX_SAFE_INTEGER);
-  }
-  return Number.isSafeInteger(n);
-}
