@@ -26,8 +26,8 @@ describe('isOdd', function() {
   });
 
   it('should throw an error when an invalid value is passed', function() {
-    assert.throws(() => isOdd(), /expected a number/);
-    assert.throws(() => isOdd('foo'), /expected a number/);
+    assert.throws(() => isOdd(), /expected an integer/);
+    assert.throws(() => isOdd('foo'), /expected an integer/);
     assert.throws(() => isOdd('1.1e0'), /expected an integer/);
     assert.throws(() => isOdd('9007199254740992'), /value exceeds maximum safe integer/);
     assert.throws(() => isOdd(9007199254740992), /value exceeds maximum safe integer/);
